@@ -1,0 +1,735 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>passport-http (v0.3.0)</a>
+</h1>
+<h4>HTTP Basic and Digest authentication strategies for Passport.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-http">module passport-http</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.BasicStrategy">
+            function <span class="apidocSignatureSpan">passport-http.</span>BasicStrategy
+            <span class="apidocSignatureSpan">(options, verify)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.BasicStrategy.super_">
+            function <span class="apidocSignatureSpan">passport-http.</span>BasicStrategy.super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.DigestStrategy">
+            function <span class="apidocSignatureSpan">passport-http.</span>DigestStrategy
+            <span class="apidocSignatureSpan">(options, secret, validate)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">passport-http.</span>BasicStrategy.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">passport-http.</span>BasicStrategy.super_.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">passport-http.</span>DigestStrategy.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-http.BasicStrategy">module passport-http.BasicStrategy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.BasicStrategy.BasicStrategy">
+            function <span class="apidocSignatureSpan">passport-http.</span>BasicStrategy
+            <span class="apidocSignatureSpan">(options, verify)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.BasicStrategy.super_">
+            function <span class="apidocSignatureSpan">passport-http.BasicStrategy.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-http.BasicStrategy.prototype">module passport-http.BasicStrategy.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.BasicStrategy.prototype._challenge">
+            function <span class="apidocSignatureSpan">passport-http.BasicStrategy.prototype.</span>_challenge
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.BasicStrategy.prototype.authenticate">
+            function <span class="apidocSignatureSpan">passport-http.BasicStrategy.prototype.</span>authenticate
+            <span class="apidocSignatureSpan">(req)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-http.BasicStrategy.super_">module passport-http.BasicStrategy.super_</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.BasicStrategy.super_.super_">
+            function <span class="apidocSignatureSpan">passport-http.BasicStrategy.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.BasicStrategy.super_.Strategy">
+            function <span class="apidocSignatureSpan">passport-http.BasicStrategy.super_.</span>Strategy
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-http.BasicStrategy.super_.prototype">module passport-http.BasicStrategy.super_.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.BasicStrategy.super_.prototype.authenticate">
+            function <span class="apidocSignatureSpan">passport-http.BasicStrategy.super_.prototype.</span>authenticate
+            <span class="apidocSignatureSpan">(req, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-http.DigestStrategy">module passport-http.DigestStrategy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.DigestStrategy.DigestStrategy">
+            function <span class="apidocSignatureSpan">passport-http.</span>DigestStrategy
+            <span class="apidocSignatureSpan">(options, secret, validate)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.DigestStrategy.super_">
+            function <span class="apidocSignatureSpan">passport-http.DigestStrategy.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-http.DigestStrategy.prototype">module passport-http.DigestStrategy.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.DigestStrategy.prototype._challenge">
+            function <span class="apidocSignatureSpan">passport-http.DigestStrategy.prototype.</span>_challenge
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-http.DigestStrategy.prototype.authenticate">
+            function <span class="apidocSignatureSpan">passport-http.DigestStrategy.prototype.</span>authenticate
+            <span class="apidocSignatureSpan">(req)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-http" id="apidoc.module.passport-http">module passport-http</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.BasicStrategy" id="apidoc.element.passport-http.BasicStrategy">
+        function <span class="apidocSignatureSpan">passport-http.</span>BasicStrategy
+        <span class="apidocSignatureSpan">(options, verify)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BasicStrategy(options, verify) {
+  if (typeof options == 'function') {
+    verify = options;
+    options = {};
+  }
+  if (!verify) throw new Error('HTTP Basic authentication strategy requires a verify function');
+
+  passport.Strategy.call(this);
+  this.name = 'basic';
+  this._verify = verify;
+  this._realm = options.realm || 'Users';
+  this._passReqToCallback = options.passReqToCallback;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.BasicStrategy.super_" id="apidoc.element.passport-http.BasicStrategy.super_">
+        function <span class="apidocSignatureSpan">passport-http.</span>BasicStrategy.super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.DigestStrategy" id="apidoc.element.passport-http.DigestStrategy">
+        function <span class="apidocSignatureSpan">passport-http.</span>DigestStrategy
+        <span class="apidocSignatureSpan">(options, secret, validate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DigestStrategy(options, secret, validate) {
+  if (typeof options == 'function') {
+    validate = secret;
+    secret = options;
+    options = {};
+  }
+  if (!secret) throw new Error('HTTP Digest authentication strategy requires a secret function');
+
+  passport.Strategy.call(this);
+  this.name = 'digest';
+  this._secret = secret;
+  this._validate = validate;
+  this._realm = options.realm || 'Users';
+  if (options.domain) {
+    this._domain = (Array.isArray(options.domain)) ? options.domain : [ options.domain ];
+  }
+  this._opaque = options.opaque;
+  this._algorithm = options.algorithm;
+  if (options.qop) {
+    this._qop = (Array.isArray(options.qop)) ? options.qop : [ options.qop ];
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-http.BasicStrategy" id="apidoc.module.passport-http.BasicStrategy">module passport-http.BasicStrategy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.BasicStrategy.BasicStrategy" id="apidoc.element.passport-http.BasicStrategy.BasicStrategy">
+        function <span class="apidocSignatureSpan">passport-http.</span>BasicStrategy
+        <span class="apidocSignatureSpan">(options, verify)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BasicStrategy(options, verify) {
+  if (typeof options == 'function') {
+    verify = options;
+    options = {};
+  }
+  if (!verify) throw new Error('HTTP Basic authentication strategy requires a verify function');
+
+  passport.Strategy.call(this);
+  this.name = 'basic';
+  this._verify = verify;
+  this._realm = options.realm || 'Users';
+  this._passReqToCallback = options.passReqToCallback;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.BasicStrategy.super_" id="apidoc.element.passport-http.BasicStrategy.super_">
+        function <span class="apidocSignatureSpan">passport-http.BasicStrategy.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-http.BasicStrategy.prototype" id="apidoc.module.passport-http.BasicStrategy.prototype">module passport-http.BasicStrategy.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.BasicStrategy.prototype._challenge" id="apidoc.element.passport-http.BasicStrategy.prototype._challenge">
+        function <span class="apidocSignatureSpan">passport-http.BasicStrategy.prototype.</span>_challenge
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_challenge = function () {
+  return 'Basic realm="' + this._realm + '"';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.BasicStrategy.prototype.authenticate" id="apidoc.element.passport-http.BasicStrategy.prototype.authenticate">
+        function <span class="apidocSignatureSpan">passport-http.BasicStrategy.prototype.</span>authenticate
+        <span class="apidocSignatureSpan">(req)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">authenticate = function (req) {
+  var authorization = req.headers['authorization'];
+  if (!authorization) { return this.fail(this._challenge()); }
+
+  var parts = authorization.split(' ')
+  if (parts.length &lt; 2) { return this.fail(400); }
+
+  var scheme = parts[0]
+    , credentials = new Buffer(parts[1], 'base64').toString().split(':');
+
+  if (!/Basic/i.test(scheme)) { return this.fail(this._challenge()); }
+  if (credentials.length &lt; 2) { return this.fail(400); }
+
+  var userid = credentials[0];
+  var password = credentials[1];
+  if (!userid || !password) {
+    return this.fail(this._challenge());
+  }
+
+  var self = this;
+
+  function verified(err, user) {
+    if (err) { return self.error(err); }
+    if (!user) { return self.fail(self._challenge()); }
+    self.success(user);
+  }
+
+  if (self._passReqToCallback) {
+    this._verify(req, userid, password, verified);
+  } else {
+    this._verify(userid, password, verified);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      return done(null, user);
+    });
+  }
+));
+
+#### Authenticate Requests
+
+Use `passport.<span class="apidocCodeKeywordSpan">authenticate</span>()`, specifying the `'basic'` strategy, to
+authenticate requests.  Requests containing an 'Authorization' header do not
+require session support, so the `session` option can be set to `false`.
+
+For example, as route middleware in an [Express](http://expressjs.com/)
+application:
+
+app.get('/private',
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-http.BasicStrategy.super_" id="apidoc.module.passport-http.BasicStrategy.super_">module passport-http.BasicStrategy.super_</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.BasicStrategy.super_.super_" id="apidoc.element.passport-http.BasicStrategy.super_.super_">
+        function <span class="apidocSignatureSpan">passport-http.BasicStrategy.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.BasicStrategy.super_.Strategy" id="apidoc.element.passport-http.BasicStrategy.super_.Strategy">
+        function <span class="apidocSignatureSpan">passport-http.BasicStrategy.super_.</span>Strategy
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-http.BasicStrategy.super_.prototype" id="apidoc.module.passport-http.BasicStrategy.super_.prototype">module passport-http.BasicStrategy.super_.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.BasicStrategy.super_.prototype.authenticate" id="apidoc.element.passport-http.BasicStrategy.super_.prototype.authenticate">
+        function <span class="apidocSignatureSpan">passport-http.BasicStrategy.super_.prototype.</span>authenticate
+        <span class="apidocSignatureSpan">(req, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">authenticate = function (req, options) {
+  throw new Error('Strategy#authenticate must be overridden by subclass');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      return done(null, user);
+    });
+  }
+));
+
+#### Authenticate Requests
+
+Use `passport.<span class="apidocCodeKeywordSpan">authenticate</span>()`, specifying the `'basic'` strategy, to
+authenticate requests.  Requests containing an 'Authorization' header do not
+require session support, so the `session` option can be set to `false`.
+
+For example, as route middleware in an [Express](http://expressjs.com/)
+application:
+
+app.get('/private',
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-http.DigestStrategy" id="apidoc.module.passport-http.DigestStrategy">module passport-http.DigestStrategy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.DigestStrategy.DigestStrategy" id="apidoc.element.passport-http.DigestStrategy.DigestStrategy">
+        function <span class="apidocSignatureSpan">passport-http.</span>DigestStrategy
+        <span class="apidocSignatureSpan">(options, secret, validate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DigestStrategy(options, secret, validate) {
+  if (typeof options == 'function') {
+    validate = secret;
+    secret = options;
+    options = {};
+  }
+  if (!secret) throw new Error('HTTP Digest authentication strategy requires a secret function');
+
+  passport.Strategy.call(this);
+  this.name = 'digest';
+  this._secret = secret;
+  this._validate = validate;
+  this._realm = options.realm || 'Users';
+  if (options.domain) {
+    this._domain = (Array.isArray(options.domain)) ? options.domain : [ options.domain ];
+  }
+  this._opaque = options.opaque;
+  this._algorithm = options.algorithm;
+  if (options.qop) {
+    this._qop = (Array.isArray(options.qop)) ? options.qop : [ options.qop ];
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.DigestStrategy.super_" id="apidoc.element.passport-http.DigestStrategy.super_">
+        function <span class="apidocSignatureSpan">passport-http.DigestStrategy.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-http.DigestStrategy.prototype" id="apidoc.module.passport-http.DigestStrategy.prototype">module passport-http.DigestStrategy.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.DigestStrategy.prototype._challenge" id="apidoc.element.passport-http.DigestStrategy.prototype._challenge">
+        function <span class="apidocSignatureSpan">passport-http.DigestStrategy.prototype.</span>_challenge
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_challenge = function () {
+  // TODO: For maximum flexibility, a mechanism for delegating the generation
+  //       of the nonce and opaque data to the application would be useful.
+
+  var challenge = 'Digest realm="' + this._realm + '"';
+  if (this._domain) {
+    challenge += ', domain="' + this._domain.join(' ') + '"';
+  }
+  challenge += ', nonce="' + nonce(32) + '"';
+  if (this._opaque) {
+    challenge += ', opaque="' + this._opaque + '"';
+  }
+  if (this._algorithm) {
+    challenge += ', algorithm=' + this._algorithm;
+  }
+  if (this._qop) {
+    challenge += ', qop="' + this._qop.join(',') + '"';
+  }
+
+  return challenge;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-http.DigestStrategy.prototype.authenticate" id="apidoc.element.passport-http.DigestStrategy.prototype.authenticate">
+        function <span class="apidocSignatureSpan">passport-http.DigestStrategy.prototype.</span>authenticate
+        <span class="apidocSignatureSpan">(req)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">authenticate = function (req) {
+  var authorization = req.headers['authorization'];
+  if (!authorization) { return this.fail(this._challenge()); }
+
+  var parts = authorization.split(' ')
+  if (parts.length &lt; 2) { return this.fail(400); }
+
+  var scheme = parts[0]
+    , params = parts.slice(1).join(' ');
+
+  if (!/Digest/i.test(scheme)) { return this.fail(this._challenge()); }
+
+  var creds = parse(params);
+  if (Object.keys(creds).length === 0) { return this.fail(400); }
+
+  if (!creds.username) {
+    return this.fail(this._challenge());
+  }
+  if (req.url !== creds.uri) {
+    return this.fail(400);
+  }
+
+
+  var self = this;
+
+  // Use of digest authentication requires a password (aka shared secret) known
+  // to both the client and server, but not transported over the wire.  This
+  // secret is needed in order to compute the hashes required to authenticate
+  // the request, and can be obtained by calling the secret() function the
+  // application provides to the strategy.  Because username is the key for a
+  // database query, a `user` instance is also obtained from this callback.
+  // However, the user will only be successfully authenticated if the password
+  // is correct, as indicated by the challenge response matching the computed
+  // value.
+  this._secret(creds.username, function(err, user, password) {
+    if (err) { return self.error(err); }
+    if (!user) { return self.fail(self._challenge()); }
+
+    var ha1;
+    if (!creds.algorithm || creds.algorithm === 'MD5') {
+      if (typeof password === 'object' &amp;&amp; password.ha1) {
+        ha1 = password.ha1;
+      } else  {
+        ha1 = md5(creds.username + ":" + creds.realm + ":" + password);
+      }
+    } else if (creds.algorithm === 'MD5-sess') {
+      // TODO: The nonce and cnonce used here should be the initial nonce
+      //       value generated by the server and the first nonce value used by
+      //       the client.  This creates a 'session key' for the authentication
+      //       of subsequent requests.  The storage of the nonce values and the
+      //       resulting session key needs to be investigated.
+      //
+      //       See RFC 2617 (Section 3.2.2.2) for further details.
+      ha1 = md5(md5(creds.username + ":" + creds.realm + ":" + password) + ":" + creds.nonce + ":" + creds.cnonce);
+    } else {
+      return self.fail(400);
+    }
+
+    var ha2;
+    if (!creds.qop || creds.qop === 'auth') {
+      ha2 = md5(req.method + ":" + creds.uri);
+    } else if (creds.qop === 'auth-int') {
+      // TODO: Implement support for auth-int.  Note that the raw entity body
+      //       will be needed, not the parsed req.body property set by Connect's
+      //       bodyParser middleware.
+      //
+      //       See RFC 2617 (Section 3.2.2.3 and Section 3.2.2.4) for further
+      //       details.
+      return self.error(new Error('auth-int not implemented'));
+    } else {
+      return self.fail(400);
+    }
+
+    var digest;
+    if (!creds.qop) {
+      digest = md5(ha1 + ":" + creds.nonce + ":" + ha2);
+    } else if (creds.qop === 'auth' || creds.qop === 'auth-int') {
+      digest = md5(ha1 + ":" + creds.nonce + ":" + creds.nc + ":" + creds.cnonce + ":" + creds.qop + ":" + ha2);
+    } else {
+      return self.fail(400);
+    }
+
+    if (creds.response != digest) {
+      return self.fail(self._challenge());
+    } else {
+      if (self._validate) {
+        self._validate({
+            nonce: creds.nonce,
+            cnonce: creds.cnonce,
+            nc: creds.nc,
+            opaque: creds.opaque
+          },
+          function(err, valid) {
+            if (err) { return self.error(err); }
+            if (!valid) { return self.fail(self._challenge()); }
+            self.success(user);
+          });
+      } else {
+        self.success(user);
+      }
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      return done(null, user);
+    });
+  }
+));
+
+#### Authenticate Requests
+
+Use `passport.<span class="apidocCodeKeywordSpan">authenticate</span>()`, specifying the `'basic'` strategy, to
+authenticate requests.  Requests containing an 'Authorization' header do not
+require session support, so the `session` option can be set to `false`.
+
+For example, as route middleware in an [Express](http://expressjs.com/)
+application:
+
+app.get('/private',
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
